@@ -1,6 +1,21 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.reactlibrary">
+    <application
+        android:allowBackup="true">
+        <service
+            android:name="com.ubtechinc.cruzr.sdk.speech.SpeechService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.futurestore.Cruiser_Service" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="cruiser_appid"
+            android:value="1200" />
+    </application>
+
 
 </manifest>
   

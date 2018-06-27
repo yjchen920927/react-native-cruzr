@@ -32,5 +32,7 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('src/libs/cruzr-sdk-0.1.8.jar')
 }
   
