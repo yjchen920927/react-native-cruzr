@@ -34,5 +34,14 @@ dependencies {
     compile 'com.facebook.react:react-native:+'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile files('src/libs/cruzr-sdk-0.1.8.jar')
+//    compile files('src/libs/gson-2.1.jar')
+    compile files('src/libs/commons-codec-1.4.jar')
+    compile files('src/libs/commons-httpclient-3.1_1.jar')
+    compile files('src/libs/commons-io-2.0.1.jar')
+    compile files('src/libs/commons-logging.jar')
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
 }
   
