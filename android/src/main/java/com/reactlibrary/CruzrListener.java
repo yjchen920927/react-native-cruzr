@@ -12,4 +12,8 @@ public interface CruzrListener {
      * 启动app
      */
     void startApp();
+    /**
+     * 退出app
+     */
+    void exitApp();
 }

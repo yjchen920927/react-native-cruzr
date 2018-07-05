@@ -53,7 +53,9 @@ public class CruzrUtils {
                     try {
                         JSONObject object = new JSONObject(s);
                         String intentStr = object.optString("intent");
-                        if(intentStr.contains("购物")||intentStr.contains("导购")||intentStr.contains("导购屏")||intentStr.contains("")) {
+                        if(intentStr.contains("退出购物")||intentStr.contains("退出导购")||intentStr.contains("退出导购屏")||intentStr.contains("退出app")) {
+                            listener.exitApp();
+                        }else if(intentStr.contains("购物")||intentStr.contains("导购")||intentStr.contains("导购屏")) {
                             listener.startApp();
                         }
                     }catch (Exception e){
