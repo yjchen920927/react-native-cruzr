@@ -2,7 +2,6 @@ package com.reactlibrary.orvibo;
 
 import android.util.Log;
 
-import com.google.gson.Gson;
 import com.reactlibrary.orvibo.util.Constants;
 import com.reactlibrary.orvibo.util.EncryptUtil;
 import com.reactlibrary.orvibo.util.Tools;
@@ -219,9 +218,9 @@ public class APIMain {
 		String requst = Tools.paramsToString(paramsMap);
 		Log.e("orvibo",requst);
 //		return Tools.doPost(host + uri, requst);
-		Gson gson = new Gson();
-		String postInfoStr = gson.toJson(paramsMap);
-		RequestBody body = RequestBody.create(MediaType.parse("application/json; charset=utf-8"),postInfoStr);
+//		Gson gson = new Gson();
+//		String postInfoStr = gson.toJson(paramsMap);
+//		RequestBody body = RequestBody.create(MediaType.parse("application/json; charset=utf-8"),postInfoStr);
 
 //		Call<RegistResponse> call = HttpClient.getOrviboAPI().regist(body);
 //        call.enqueue(new Callback<RegistResponse>() {
