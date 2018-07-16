@@ -48,8 +48,8 @@ public class SemanticAnalysisManager {
      */
     private void lightAnalysis(String str) {
         List<DeviceInfoResponse.DListBean> list = new ArrayList<>();
-        if (str.contains("入户门")) {
-            list = filterDevicesByRoomAndName(str, "入户门", "灯");
+        if (str.contains("入户")) {
+            list = filterDevicesByRoomAndName(str, "入户", "灯");
         } else if (str.contains("餐厅")) {
             list = filterDevicesByRoomAndName(str, "餐厅", "灯");
         } else if (str.contains("客厅")) {
