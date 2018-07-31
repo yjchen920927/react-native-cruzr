@@ -45,12 +45,12 @@ public class CruzrUtils {
 
                     getSceneList();
                     deviceInfoBean = gson.fromJson(result, DeviceInfoResponse.class);
-                    Log.i("orvibo", "--size:"+deviceInfoBean.getDList().size()+"--"+deviceInfoBean.toString());
+                    // Log.i("orvibo", "--size:"+deviceInfoBean.getDList().size()+"--"+deviceInfoBean.toString());
 
                     break;
                 case GetSceneList:
                     sceneListResponse = gson.fromJson(result, SceneListResponse.class);
-                    Log.i("orvibo", "--size:"+sceneListResponse.getSceneList().size()+"--"+sceneListResponse.toString());
+                    // Log.i("orvibo", "--size:"+sceneListResponse.getSceneList().size()+"--"+sceneListResponse.toString());
                     break;
             }
         }
